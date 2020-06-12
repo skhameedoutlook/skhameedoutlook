@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="icons/the-folder.png" type="image/icon type">
+        <title>File Hosting</title>
+        <link rel="stylesheet" href="styles/bootstrap.min.css" /> 
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <form class="form-inline">
+                <button class="back-button btn btn-outline-success my-2 my-sm-0" onclick="goback(event)">&lt; Back</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="file" id="file" accept=".txt" />
+                <button class="back-button btn btn-outline-success my-2 my-sm-0" onclick="uploadFile(event)">Upload File</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="form-control mr-sm-2" type="text" id="folder-name" type="search" placeholder="Enter folder name" aria-label="Search" />
+                <button class="back-button btn btn-outline-success my-2 my-sm-0" onclick="createFolder(event)">Create Folder</button>
+              </form>
+            
+            
+        </nav>
+        <div style="display: block; height: 20px;"></div>
+        <div class="container" >
+            <nav id="loc-nav" class="navbar navbar-expand-lg navbar-light bg-success" style=" height: 40px; color: #FFFFFF; border-radius: 5px;">
+                <div id="loc-nav-body">
+                    Currently, in root directory.
+                </div>
+            </nav>
+            <div id="main-content"> 
+                <div style="display: block; width: 75%; margin-top: 140px; margin-left: auto; margin-right: auto; text-align: center;">
+                    <h1>Create Or Upload Text Files, or create folders and save your data.</h1>
+                    <!-- <div style="display: block; margin-left: 0; margin-top: 30px;">
+                        <ul style="text-align: left;">
+                            <h3>Done</h3>
+                            <hr />
+                            <li style="list-style-type: none;">
+                                File Upload.
+                            </li>
+                            <li style="list-style-type: none;">
+                                Directory Creation and navigation.
+                            </li>
+                            <h3>To Add</h3>
+                            <hr />
+                            <li style="list-style-type: none;">
+                                File Preview directly in broswer.
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            
+            <!-- <div class="row row-spacing">
+                <div class="col-sm" >
+                    <div id="idz"  class="center-hz col-sm-inner" onclick="openFileFolder(event, 'folder')">
+                        <img src="icons/the-file.png" class="center-hz" style= "width: 70px; height: 70px; padding-top: 20px;">
+                        <p class="center-text">Waterfalls</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/the-file.png" class="center-hz" style= "width: 100px; height: 100px;">
+                    <p class="center-text">Waterfalls</p>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/the-file.png" class="center-hz" style= "width: 100px; height: 100px;">
+                    <p class="center-text">Waterfalls</p>
+                </div>
+            </div>
+            <div class="row row-spacing">
+                <div class="col-sm">
+                    <img src="icons/the-file.png" class="center-hz" style= "width: 100px; height: 100px;">
+                    <p class="center-text">Waterfalls</p>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/the-file.png" class="center-hz" style= "width: 100px; height: 100px;">
+                    <p class="center-text">Waterfalls</p>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/the-file.png" class="center-hz" style= "width: 100px; height: 100px;">
+                    <p class="center-text">Waterfalls</p>
+                </div>
+            </div> -->
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
